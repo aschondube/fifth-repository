@@ -1,0 +1,100 @@
+TASK 4
+
+
+Questions
+
+-- 4.1 Select the title of all movies.
+
+Title
+Citizen Kane
+Singin' in the Rain
+The Wizard of Oz
+The Quiet Man
+North by Northwest
+The Last Tango in Paris
+Some Like it Hot
+A Night at the Opera
+
+-- 4.2 Show all the distinct ratings in the database.
+
+Rating
+PG
+G
+
+NC-17
+PG-13
+
+-- 4.3 Show all unrated movies.
+
+Title
+The Quiet Man
+North by Northwest
+A Night at the Opera
+
+-- 4.4 Select all movie theaters that are not currently showing a movie.
+
+
+Name
+Majestic
+Nickelodeon
+
+-- 4.5 Select all data from all movie theaters and, additionally, the data from the movie that is being shown in the theater (if one is being shown).
+
+Code	Name		Movie	Code	Title				Rating
+1	Odeon		5	5	North by Northwest	
+2	Imperial	1	1	Citizen Kane			PG
+4	Royale		6	6	The Last Tango in Paris		NC-17
+5	Paraiso		3	3	The Wizard of Oz		G
+
+
+-- 4.6 Select all data from all movies and, if that movie is being shown in a theater, show the data from the theater.
+
+Code	Title			Rating	Code	Name		Movie
+5	North by Northwest		1	Odeon		5
+1	Citizen Kane		PG	2	Imperial	1
+6	The Last Tango in Paris	NC-17	4	Royale		6
+3	The Wizard of Oz	G	5	Paraiso		3
+
+-- 4.7 Show the titles of movies not currently being shown in any theaters.
+
+Title
+Singin' in the Rain
+The Quiet Man
+Some Like it Hot
+A Night at the Opera
+
+-- 4.8 Add the unrated movie "One, Two, Three".
+ 
+
+-- 4.9 Set the rating of all unrated movies to "G".
+
+→ BEFORE 
+
+Title		Rating
+Citizen Kane		PG
+Singin' in the Rain	G
+The Wizard of Oz	G
+The Quiet Man	
+North by Northwest	
+The Last Tango in Paris	NC-17
+Some Like it Hot	PG-13
+A Night at the Opera	
+One, Two, Three	
+
+→ AFTER
+
+Title	Rating
+Citizen Kane	PG
+Singin' in the Rain	G
+The Wizard of Oz	G
+The Quiet Man	G
+North by Northwest	G
+The Last Tango in Paris	NC-17
+Some Like it Hot	PG-13
+A Night at the Opera	G
+One, Two, Three	G
+
+-- 4.10 Remove movie theaters projecting movies rated "NC-17".
+
+
+

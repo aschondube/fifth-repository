@@ -1,0 +1,60 @@
+TASK 7
+
+-- 7.1 Who received a 1.5kg package?
+
+    -- The result is "Al Gore's Head".
+
+Name		Weight
+Al Gore's Head	1.5
+	
+-- 7.2 What is the total weight of all the packages that he sent?
+
+Name	SUM (p.Weight)
+Al Gore's Head	17.0
+
+Sum_of_Weight
+170.5
+
+-- Optional questions
+
+-- 7.3 Retrieve the names of employees who have clearance level 4 or higher.
+
+Name
+Turanga Leela
+Bender Bending Rodriguez
+
+-- 7.4 Rank the employees based on their salary in descending order, showing their names and positions alongside their rank. (Hint: Window Function)
+
+Name	Position	Ranking
+Hubert J. Farnsworth	CEO	1
+Turanga Leela	Captain	2
+Hermes Conrad	Bureaucrat	2
+Phillip J. Fry	Delivery boy	3
+Bender Bending Rodriguez	Robot	3
+Amy Wong	Intern	4
+Scruffy Scruffington	Janitor	4
+John A. Zoidberg	Physician	5
+
+-- 7.5 Create a CTE to calculate the total weight of packages sent to each planet, then join it with the Planet table to display the planet names and their corresponding total weights.
+
+Name		Weight
+Decapod X	24.0
+Mars		25.0
+Omega III	32.0
+Tarantulon VI	100.0
+
+-- 7.6 Retrieve the names of employees who have managed the shipment of packages to planets that no other employee has shipped to.
+
+
+Name
+Phillip J. Fry
+Phillip J. Fry
+Turanga Leela
+Turanga Leela
+Hermes Conrad
+
+-- 7.7 Retrieve the names of planets along with the number of shipments made to each planet, but exclude planets where the total weight of packages sent is less than 20 units.
+
+Name		Count(p.Shipment)
+Omega III	1
+Tarantulon VI	1  

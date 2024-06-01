@@ -1,0 +1,199 @@
+--3.1 Select all warehouses.
+
+Code	Location	Capacity
+1	Chicago	3
+2	Chicago	4
+3	New York	7
+4	Los Angeles	2
+5	San Francisco	8
+
+--3.2 Select all boxes with a value larger than $150.
+
+Code	Contents	Value	Warehouse
+0MN7	Rocks	180.0	3
+4H8P	Rocks	250.0	1
+4RT3	Scissors	190.0	4
+7G3H	Rocks	200.0	1
+9J6F	Papers	175.0	2
+
+--3.3 Select all distinct contents in all the boxes.
+
+Contents
+Rocks
+Scissors
+Papers
+
+--3.4 Select the average value of all the boxes.
+
+avg(value)
+147.727272727273
+
+--3.5 Select the warehouse code and the average value of the boxes in each warehouse.
+
+Code	AVG(b.Value)
+1	162.5
+2	162.5
+3	115.0
+4	165.0
+5	90.0
+
+--3.6 Same as previous exercise, but select only those warehouses where the average value of the boxes is greater than 150.
+
+Code	AVG(b.Value)
+1	162.5
+2	162.5
+4	165.0
+
+--3.7 Select the code of each box, along with the name of the city the box is located in.
+
+Code	Location
+0MN7	New York
+4H8P	Chicago
+4RT3	Los Angeles
+7G3H	Chicago
+8JN6	Chicago
+8Y6U	New York
+9J6F	Chicago
+LL08	Los Angeles
+P0H6	Chicago
+P2T6	Chicago
+TU55	San Francisco
+
+--3.8 Select the warehouse codes, along with the number of boxes in each warehouse. 
+
+Code	Count(*)
+1	4
+2	2
+3	2
+4	2
+5	1
+
+--3.9 Select the codes of all warehouses that are saturated (a warehouse is saturated if the number of boxes in it is larger than the warehouse's capacity).
+
+Code
+1
+
+
+--3.10 Select the codes of all the boxes located in Chicago.
+
+Code
+4H8P
+7G3H
+8JN6
+9J6F
+P0H6
+P2T6
+
+--3.11 Create a new warehouse in New York with a capacity for 3 boxes.
+
+
+--3.12 Create a new box, with code "H5RT", containing "Papers" with a value of $200, and located in warehouse 2.
+
+
+
+--3.13 Reduce the value of all boxes by 15%.
+
+Code	Value
+0MN7	180.0
+4H8P	250.0
+4RT3	190.0
+7G3H	200.0
+8JN6	75.0
+8Y6U	50.0
+9J6F	175.0
+LL08	140.0
+P0H6	125.0
+P2T6	150.0
+TU55	90.0
+H5RT	200.0
+
+Reduction
+
+Code	Value
+0MN7	153.0
+4H8P	212.5
+4RT3	161.5
+7G3H	170.0
+8JN6	63.75
+8Y6U	42.5
+9J6F	148.75
+LL08	119.0
+P0H6	106.25
+P2T6	127.5
+TU55	76.5
+H5RT	170.0
+
+-- 3.14 Delete all records of boxes from saturated warehouses (no boxes were harmed).
+
+Original count
+Code	Capacity	box_count
+1	3		4
+2	4		3
+3	7		2
+4	2		2
+5	8		1
+Reduced count
+
+Code	Capacity	Box_Count
+2	4		3
+3	7		2
+4	2		2
+5	8		1
+
+--3.15 Remove all boxes with a value lower than $100.
+
+Original 
+Code	Contents	Value	Warehouse
+0MN7	Rocks		153.0	3
+4RT3	Scissors	161.5	4
+8Y6U	Papers		42.5	3
+9J6F	Papers		148.75	2
+LL08	Rocks		119.0	4
+P2T6	Scissors	127.5	2
+TU55	Papers		76.5	5
+H5RT	Papers		170.0	2
+
+After Delete 
+Code	Contents	Value	Warehouse
+0MN7	Rocks		153.0	3
+4RT3	Scissors	161.5	4
+9J6F	Papers		148.75	2
+LL08	Rocks		119.0	4
+P2T6	Scissors	127.5	2
+H5RT	Papers		170.0	2
+
+
+-- 3.16 Add Index for column "Warehouse" in table "boxes"
+    -- !!!NOTE!!!: index should NOT be used on small tables in practice
+
+
+-- 3.17 Print all the existing indexes
+    -- !!!NOTE!!!: index should NOT be used on small tables in practice
+
+type	name				tbl_name	rootpage	sql
+index	sqlite_autoindex_Boxes_1	Boxes		4	
+index	warehouse_index			Boxes		5		CREATE INDEX warehouse_index ON Boxes(Warehouse) 
+
+
+-- 3.18 Remove (drop) the index you added just
+
+    -- !!!NOTE!!!: index should NOT be used on small tables in practice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

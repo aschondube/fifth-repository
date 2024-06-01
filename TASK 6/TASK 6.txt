@@ -1,0 +1,92 @@
+TASK 6
+
+-- 6.1 List all the scientists' names, their projects' names, 
+
+Name	Name
+Michael Rogers	Winds: Studying Bernoullis Principle
+Anand Manikutty	Aerodynamics and Gas Mileage
+Carol Smith	Build Your Own Telescope
+Joe Stevens	Build Your Own Telescope
+Mary-Anne Foster	Juicy: Extracting Apple Juice with Pectinase
+John Doe	A Silver-Cleaning Battery
+David Smith	Build Your Own Telescope
+Zacary Efron	A Silver-Cleaning Battery
+Eric Goldsmith	Aerodynamics and Gas Mileage
+Elizabeth Doe	A Matter of Time
+Kumar Swamy	A Puzzling Parallax
+George ODonnell	Aerodynamics and Ice Hockey
+
+    -- and the total hours worked on each project, 
+
+Name	Name	Hours
+Michael Rogers	Winds: Studying Bernoullis Principle	156
+Anand Manikutty	Aerodynamics and Gas Mileage	189
+Carol Smith	Build Your Own Telescope	256
+Joe Stevens	Build Your Own Telescope	789
+Mary-Anne Foster	Juicy: Extracting Apple Juice with Pectinase	98
+John Doe	A Silver-Cleaning Battery	89
+David Smith	Build Your Own Telescope	112
+Zacary Efron	A Silver-Cleaning Battery	299
+Eric Goldsmith	Aerodynamics and Gas Mileage	6546
+Elizabeth Doe	A Matter of Time	321
+Kumar Swamy	A Puzzling Parallax	9684
+George ODonnell	Aerodynamics and Ice Hockey	321
+
+    -- in alphabetical order of project name, then scientist name.
+
+Project Name A to Z
+
+Elizabeth Doe	A Matter of Time	321
+Kumar Swamy	A Puzzling Parallax	9684
+John Doe	A Silver-Cleaning Battery	89
+Zacary Efron	A Silver-Cleaning Battery	299
+Anand Manikutty	Aerodynamics and Gas Mileage	189
+Eric Goldsmith	Aerodynamics and Gas Mileage	6546
+George ODonnell	Aerodynamics and Ice Hockey	321
+Carol Smith	Build Your Own Telescope	256
+Joe Stevens	Build Your Own Telescope	789
+David Smith	Build Your Own Telescope	112
+Mary-Anne Foster	Juicy: Extracting Apple Juice with Pectinase	98
+Michael Rogers	Winds: Studying Bernoullis Principle	156
+
+
+Scientist Name A to Z
+
+Name	Project_Name	Hours
+Anand Manikutty	Aerodynamics and Gas Mileage	189
+Carol Smith	Build Your Own Telescope	256
+David Smith	Build Your Own Telescope	112
+Elizabeth Doe	A Matter of Time	321
+Eric Goldsmith	Aerodynamics and Gas Mileage	6546
+George ODonnell	Aerodynamics and Ice Hockey	321
+Joe Stevens	Build Your Own Telescope	789
+John Doe	A Silver-Cleaning Battery	89
+Kumar Swamy	A Puzzling Parallax	9684
+Mary-Anne Foster	Juicy: Extracting Apple Juice with Pectinase	98
+Michael Rogers	Winds: Studying Bernoullis Principle	156
+Zacary Efron	A Silver-Cleaning Battery	299
+
+
+-- 6.2 Now list the project names and total hours worked on each, from most to least total hours.
+
+Project_Name	Hours
+A Puzzling Parallax	9684
+Aerodynamics and Ice Hockey	321
+A Matter of Time	321
+Build Your Own Telescope	256
+Aerodynamics and Gas Mileage	189
+Winds: Studying Bernoullis Principle	156
+Juicy: Extracting Apple Juice with Pectinase	98
+A Silver-Cleaning Battery	89
+
+-- 6.3 Select the project names which are not assigned yet
+
+Name
+Aerodynamics and Bridge Design
+Aerodynamics of a Football
+Aerodynamics of Air Hockey
+A Magnetic Primer Designer
+Bacterial Transformation Efficiency
+A Soluble Separation Solution
+
+
